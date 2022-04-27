@@ -1,0 +1,657 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    padding-inline: 15%;
+}
+header .logo h1{
+    font-size: 40px;
+    color: red
+}
+header .logo h1 span{
+    color: rgb(25, 25, 37);
+}
+header .timimg, header .contact, header .email{
+    color: rgb(25, 25, 37);
+}
+header .fa-phone-alt,header .fa-envelope,header .fa-clock{
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 15px;
+    margin-right: 10px;
+    color: #fff;
+    background-color: rgb(25, 25, 37);
+}
+
+nav{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(25, 25, 37);
+    padding-inline: 15%;
+}
+nav ul{
+    width: 100%;
+}
+nav ul li{
+    list-style: none;
+    margin-inline: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a .fa-caret-down{
+    margin-inline: 5px;
+}
+nav ul button{
+    border: none;
+    outline: none;
+    padding: 5px 12px;
+    border-radius: 30px;
+    color: rgb(25, 25, 37);
+    background-color: #fff;
+    margin-left: auto;
+    cursor: pointer;
+}
+.slider_container{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    position: relative;
+}
+.slider_container .slides{
+    display: none;
+    width: 100vw;
+    height: 100%;
+}
+
+.slider_container .slides img{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    border-radius: 50%;
+}
+.left{
+    left: 2%;    
+}
+.right{
+    right: 2%;
+}
+.slider_container .middle_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+}
+.slider_container .middle_content h1{
+    font-size: 55px;
+}
+.slider_container .middle_content h3{
+    color: red;
+    font-size: 30px;
+}
+.slider_container .middle_content button{
+    padding: 10px 20px;
+    border: none;
+    background: rgb(248, 28, 28);
+    color: #fff;
+    margin-top: 3%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.section_about{
+    width: 100%;
+    height: 50vh;
+    padding-inline: 15%;
+    margin-top: 2%;
+}
+.section_about .about_left,.section_about .about_right{
+    width: 100%;
+    height: 100%;
+}
+.section_about .about_right{
+    color: rgb(25, 25, 37);
+    padding: 3% 2%;
+}
+.section_about .about_right h3{
+    font-size: 25px;
+    color: red;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.section_about .about_right h3::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: red;
+}
+.section_about .about_right h1{
+    font-size: 35px;
+    margin: 3% 0 5%;
+}
+.section_about .about_right ul{
+    margin: 2% 0 3%;
+}
+.section_about .about_right ul li{
+    list-style: none;
+    line-height: 20px;
+}
+.section_about .about_right ul li::before{
+    content: "\2713";
+    color: red;
+    border: 1px solid red;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 0 3px;
+    font-weight: 800;
+}
+.section_about .about_right button{
+    border: none;
+    outline: none;
+    padding: 8px 13px;
+    background-color: red;
+    color: #fff;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.section_info{
+    margin: 3% 0;
+    width: 100%;
+    height: 35vh;
+    padding: 0 10%;
+    background-color: rgb(25, 25, 37);
+    color: #fff;
+}
+.section_info .info_locations .fas, .section_info .info_employees .fas,.section_info .info_clients .fas, .section_info .info_projects .fas{
+    font-size: 50px;
+    color: red;
+    margin-right: 10px;
+}
+.section_info .info_locations h1, .section_info .info_employees h1,.section_info .info_clients h1, .section_info .info_projects h1{
+    font-size: 35px;
+}
+.section_info .info_locations h1 span, .section_info .info_employees h1 span,.section_info .info_clients h1 span, .section_info .info_projects h1 span{
+    font-size: 20px;
+}
+
+.section_plans{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+}
+.section_plans > h3,.section_plans > h1{
+    color: rgb(25, 25, 37);
+    position: relative;
+}
+.section_plans > h3{
+    color: red;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+.section_plans > h3::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background-color: red;
+}
+.section_plans h1{
+    font-size: 45px;
+}
+.section_plans .plan_offers{
+    width: 70%;
+    height: 70%;
+    margin: 5% auto 0;
+    justify-content: space-between;
+}
+.section_plans .plan_offers .plan_basic, .section_plans .plan_offers .plan_premium, .section_plans .plan_offers .plan_complex{
+    width: 100%;
+    height: 100%;
+    color: rgb(25, 25, 37);
+    padding: 2%;
+    transition: 0.2s;
+}
+.section_plans .plan_offers .plan_basic:hover, .section_plans .plan_offers .plan_premium:hover, .section_plans .plan_offers .plan_complex:hover{
+    box-shadow: 0 0 10px black;
+    transform: scale(1.0.3);
+}
+.section_plans .plan_offers .plan_basic:hover h1, .section_plans .plan_offers .plan_premium:hover h1, .section_plans .plan_offers .plan_complex:hover h1{
+    color: red;
+}
+.section_plans .plan_offers .plan_basic>h1, .section_plans .plan_offers .plan_premium >h1, .section_plans .plan_offers .plan_complex>h1 {
+    font-size: 55px;
+    margin: 3% 0 5%;
+}
+.section_plans .plan_offers .plan_basic>h1 small, .section_plans .plan_offers .plan_premium >h1 small, .section_plans .plan_offers .plan_complex>h1 small {
+    font-size: 25px;
+}
+
+.section_plans .plan_offers .plan_basic ul li, .section_plans .plan_offers .plan_premium ul li, .section_plans .plan_offers .plan_complex ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.section_plans .plan_offers .plan_basic ul li::before, .section_plans .plan_offers .plan_premium ul li::before, .section_plans .plan_offers .plan_complex ul li::before{
+    content: "\2713";
+    color: green;
+    border: 1px solid green;
+    border-radius: 50%;
+    margin-right: 10px;
+    padding: 0 3px;
+    font-weight: 800;
+}
+.section_plans .plan_offers .plan_basic ul li:nth-child(4):before,
+.section_plans .plan_offers .plan_basic ul li:nth-child(5):before{
+    color: grey;
+    border: 1px solid grey;
+    content: "\2715";
+}
+
+.section_plans .plan_offers .plan_premium ul li:nth-child(5):before{
+    color: grey;
+    border: 1px solid grey;
+    content: "\2715";
+}
+.section_plans .plan_offers button{
+    border: none;
+    outline: none;
+    padding: 8px 13px;
+    background: rgb(25, 25, 37);
+    color: red;
+    border-radius: 30px;
+    margin-top: 2%;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.section_plans .plan_offers button:hover{
+    background: red;
+    color: #fff;
+}
+
+.washing_points{
+    width: 100%;
+    height: 60vh;
+    justify-content: space-around;
+    padding: 0 10%;
+    margin-bottom: 10vh;
+}
+.washing_points .washing_centres{
+    flex-basis: 60%;
+    height: 80%;
+}
+.washing_points .washing_centres h3{
+    color: red;
+    padding-bottom: 8px;
+    display: inline-block;
+    position: relative;
+}
+.washing_points .washing_centres h3::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    width: 60%;
+    height: 3px;
+    background-color: red;
+}
+.washing_points .washing_centres h2{
+    font-size: 40px;
+    color: rgb(25, 25, 37);
+    margin-bottom: 3%;
+}
+.washing_points .washing_centres .centres{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 13rem);
+    justify-content: space-between;
+    grid-gap: 5rem;
+}
+.washing_points .washing_centres .centres .fas{
+    color: red;
+    font-size: 30px;
+    margin-inline: 5px;
+}
+.washing_points .washing_centres .centres p{
+    font-size: 17px;
+}
+.washing_points .washing_form{
+    flex-basis: 28%;
+    height: 80%;
+    background: rgb(223, 52, 52);
+    color: #fff;
+    padding: 20px 15px;
+    border-radius: 10px;
+}
+.washing_points .washing_form .request_form{
+    flex-direction: column;
+}
+.washing_points .washing_form .request_form input, .washing_points .washing_form .request_form textarea{
+    border: 1px solid white;
+    border-radius: 5px;
+    outline: none;
+    background: rgb(223, 52, 52);
+    padding: 10px 10px;
+}
+.washing_points .washing_form .request_form ::placeholder{
+    color: #fff;
+}
+.washing_points .washing_form .request_form input:first-child{
+    margin: 5% 0;
+}
+.washing_points .washing_form .request_form textarea{
+    margin: 5% 0;
+}
+.washing_points .washing_form .request_form #request_btn{
+    color: rgb(223, 52, 52);
+    padding: 8px 0;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.team{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+}
+.team > h1 {
+    font-size: 40px;
+    color: rgb(25, 25, 37);
+} 
+.team > h3 {
+    color: red;
+    padding-bottom: 8px;
+    display: inline-block;
+    position: relative;
+}
+.team h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background-color: red;
+}
+
+.team_cards{
+    width: 75%;
+    height: 60%;
+    margin: 5% auto 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    justify-content: space-between;
+}
+
+.team_cards .card{
+    background: rgb(25, 25, 37);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+.team_cards .card:hover{
+    transform: translateY(-8px);
+}
+.team_cards .card .card_img{
+    width: 100%;
+    height: 70%;
+}
+.team_cards .card .card_info{
+    padding-top: 10%;
+    line-height: 2em;
+}
+.team_cards .card > ul{
+    position: absolute;
+    left: 50%;
+    top: 68%;
+    transform: translateX(-50%);
+    width: 60%;
+    justify-content: space-between;
+}
+.team_cards .card > ul li {
+    list-style: none;
+}
+.team_cards .card > ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    background: rgb(25, 25, 37);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.testimonials{
+    width: 100%;
+    height: 40vh;
+    text-align: center;
+    margin: 0 0 3%;
+}
+.testimonials > h3{
+    color: red;
+    padding-bottom: 8px;
+    position: relative;
+    display: inline-block;
+}
+.testimonials > h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background-color: red;
+}
+.testimonials > h1{
+    color: rgb(25, 25, 37);
+    font-size: 40px;
+}
+.testimonials .testimonial_reviews{
+    margin-top: 3%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 17rem);
+    justify-content: space-evenly;
+}
+.testimonials .testimonial_reviews .reviews .person_img img{
+    width: 100px;
+    height: 80px;
+    border-radius: 50%;
+}
+.testimonials .testimonial_reviews .reviews .person_review{
+    text-align: left;
+    padding-left: 10px;
+    color: rgb(39, 39, 58);
+}
+.testimonials .testimonial_reviews .reviews .person_review h3{
+   font-size: 23px;
+}
+.testimonials .testimonial_reviews .reviews .person_review h4{
+    margin: 2% 0 4%;
+}
+.testimonials .testimonial_reviews .reviews .person_review p small{
+    font-size: 15px;
+}
+
+.news_articles{
+    width: 100%;
+    height: 70vh;
+    text-align: center;
+}
+.news_articles > h3{
+    color: red;
+    padding-bottom: 8px;
+    position: relative;
+    display: inline-block;
+}
+.news_articles > h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 3px;
+    background-color: red;
+}
+.news_articles > h1{
+    color: rgb(25, 25, 37);
+    font-size: 40px;
+}
+.news_articles .articles_content{
+    width: 80%;
+    height: 70%;
+    margin: 3% auto 0;
+    flex-wrap: wrap;
+}
+.news_articles .articles_content .article{
+    height: 100%;
+    width: 25%;
+}
+.news_articles .articles_content .article_2{
+    margin-inline: 12.5%;
+}
+.news_articles .articles_content .article .article_img{
+    width: 100%;
+    height: 50%;
+}
+.news_articles .articles_content .article_content{
+    text-align: left;
+    height: 50%;
+    color: rgb(30, 30, 53);
+}
+.news_articles .articles_content .article_content h2{
+    margin-top: 2%;
+}
+.news_articles .articles_content .article_content p{
+    margin: 2% 0;
+}
+.news_articles .articles_content .article_content pre{
+    color: rgb(114, 110, 110);
+}
+footer{
+    width: 100%;
+    height: 50vh;
+    background: rgb(30, 30, 53);
+    padding:5% 10% 0;
+    flex-direction: column;
+}
+footer .footer_content{
+    width: 100%;
+    height: 70%;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 15rem);
+    justify-content: space-between;
+    margin-bottom: 3%;
+}
+footer .footer_content h2{
+    color: red;
+    margin-bottom: 5%;
+}
+footer .footer_content .get_in_touch p{
+    margin-bottom: 4%;
+}
+footer .footer_content .get_in_touch ul li{
+    list-style: none;
+}
+footer .footer_content .get_in_touch ul li a{
+    text-decoration: none;
+    color: rgb(30, 30, 53);
+}
+footer .footer_content .get_in_touch ul li a .fab{
+    padding: 6px;
+    background: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+footer .footer_content .get_in_touch .fas,footer .footer_content .get_in_touch .far{
+    margin-right: 5px;
+}
+footer .footer_content .get_in_touch ul li a .fa-facebook-f{
+    padding: 6px 9px;
+}
+footer .footer_content .popular_links ul li,
+footer .footer_content .useful_links ul li
+{
+    list-style: none;
+    margin-bottom: 4%;
+}
+footer .footer_content .popular_links ul li a,
+footer .footer_content .useful_links ul li a
+{
+    text-decoration: none;
+    color: #fff;
+}
+footer .footer_content .popular_links ul li a .fas,
+footer .footer_content .useful_links ul li a .fas
+{
+    margin-right: 10px;
+}
+footer .footer_content .newsletter .newsletter_form{
+    flex-direction: column;
+}
+footer .footer_content .newsletter .newsletter_form input{
+    background: rgb(30, 30, 53);
+    border-radius: 5px;
+    border: 1px solid #fff;
+    padding: 8px;
+    margin-bottom: 5%;
+}
+footer .footer_content .newsletter .newsletter_form ::placeholder{
+    color: #fff;
+}
+footer .footer_content .newsletter .newsletter_form button{
+    padding: 7px;
+    background: #fff;
+    color: rgb(30, 30, 53);
+    border-radius: 50px;
+    outline: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+footer > p span{
+    color: red;
+}
+footer > p{
+    color: #fff;
+}
+#Top_btn{
+    position:fixed;
+    bottom: 5%;
+    right: 5%;
+    background: rgb(248, 28, 28);
+    padding: 8px;
+    z-index: 10;
+    font-size: 20px;
+    color: white;
+}

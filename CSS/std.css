@@ -1,0 +1,16 @@
+.flex_1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_2{
+    display: flex;
+}
+.flex_3{
+    display: flex;
+    align-items: center;
+}
+.img_std{
+    width: 100%;
+    height: 100%;
+}

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car wash website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/std.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <a href="" id="top"></a>
+    <!-- header start -->
+    <header class="flex_1">
+        <div class="logo">
+            <h1>Auto <span>Wash</span></h1>
+        </div>
+        <div class="timimg flex_2">
+            <p><a href=""><i class="far fa-clock"></i></a></p>
+            <p>Opening hour <br>Mon - Fri, 8 to 9 </p>
+        </div>
+        <div class="contact flex_2">
+            <p><a href=""><i class="fas fa-phone-alt"></i></a></p>
+            <p>Call us <br> +012 234415786</p>
+        </div>
+        <div class="email flex_2">
+            <p><a href=""><i class="far fa-envelope"></i></a></p>
+            <p>Email Us <br> info@example.com</p>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- nav bar start -->
+    <nav class="flex_3">
+        <ul class="flex_2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Price</a></li>
+            <li><a href="#">Washing Points</a></li>
+            <li><a href="#">Pages<i class="fas fa-caret-down"></i></a></li>
+            <li><a href="#">Contact</a></li>
+            <button class="appointment">Get appointment</button>
+        </ul>
+    </nav>
+    <!-- nav bar end -->
+
+    <!-- carousal start -->
+    <div class="slider_container">
+        <div class="slides slide_1">
+            <img src="img/carousel-1.jpg" class="img_std">
+        </div>
+        <div class="slides slide_2">
+            <img src="img/carousel-2.jpg" class="img_std">
+        </div>
+        <div class="slides slide_3">
+            <img src="img/carousel-3.jpg" class="img_std">
+        </div>
+        <div class="arrow left" onclick="change(-1)">&#60;</div>
+        <div class="arrow right" onclick="change(1)">&#62;</div>
+        <div class="middle_content">
+            <h3>Washing & Detailing</h3>
+            <h1>Exterior & Interior <br>Washing</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad error <br> tempora, rem voluptate soluta cupiditate.</p>
+            <button id="explore">Explore More</button>
+        </div>
+    </div>
+    <!-- carousal end -->
+
+    <!-- About sections start -->
+    <section class="section_about flex_2">
+        <div class="about_left">
+            <img src="img/about.jpg" alt="" class="img_std">
+        </div>
+        <div class="about_right">
+            <h3>About Us</h3>
+            <h1>Car washing and detailing</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt dolore <br> maiores repellendus vero optio commodi fugiat eveniet sequi officiis <br> placeat perspiciatis debitis culpa </p>
+            <ul>
+                <li>Seat washing</li>
+                <li>Vaccume Cleaning</li>
+                <li>Interior Wet cleaning</li>
+                <li>Window wiping</li>
+            </ul>
+            <button id="">Learn more</button>
+        </div>
+    </section>
+    <!-- About sections end -->
+
+    <!-- info sections start -->
+    <section class="section_info flex_1">
+        <div class="info_locations flex_2">
+            <p><a href=""><i class="fas fa-map-marker-alt"></i></a></p>
+            <h1>25 <sup>+</sup> <br><span> service points</span></h1>
+        </div>
+        <div class="info_employees flex_2">
+            <p><a href=""><i class="fas fa-user"></i></a></p>
+            <h1>350+ <sup>+</sup><br><span> Engineers & workers</span></h1>
+        </div>
+        <div class="info_clients flex_2">
+            <p><a href=""><i class="fas fa-users"></i></a></p>
+            <h1>1500 <sup>+</sup><br><span> Happy clients</span></h1>
+        </div>
+        <div class="info_projects flex_2">
+            <p><a href=""><i class="fas fa-check"></i></a></p>
+            <h1>5000 <sup>+</sup><br><span> projects completed</span></h1>
+        </div>
+    </section>
+    <!-- info sections end -->
+
+    <!-- washing plans start -->
+    <section class="section_plans">
+        <h3>Washing Plan</h3>
+        <h1>Choose Your Plan</h1>
+        <div class="plan_offers flex_3">
+            <div class="plan_basic">
+                <h3>Basic Cleaning</h3>
+                <h1><sup><small>$</small></sup>25 <sup><small>.99</small></sup></h1>
+                <ul>
+                    <li>Seats Wasing</li>
+                    <li>Vaccume Cleaning</li>
+                    <li>Exterior Cleaning</li>
+                    <li>Interior wet Cleaning</li>
+                    <li>Window wiping Cleaning</li>
+                </ul>
+                <button>Book Now</button>
+            </div>
+            <div class="plan_premium">
+                <h3>Basic Cleaning</h3>
+                <h1><sup><small>$</small></sup>35 <sup><small>.99</small></sup></h1>
+                <ul>
+                    <li>Seats Wasing</li>
+                    <li>Vaccume Cleaning</li>
+                    <li>Exterior Cleaning</li>
+                    <li>Interior wet Cleaning</li>
+                    <li>Window wiping Cleaning</li>
+                </ul>
+                <button>Book Now</button>
+            </div>
+            <div class="plan_complex">
+                <h3>Basic Cleaning</h3>
+                <h1><sup><small>$</small></sup>49 <sup><small>.99</small></sup></h1>
+                <ul>
+                    <li>Seats Wasing</li>
+                    <li>Vaccume Cleaning</li>
+                    <li>Exterior Cleaning</li>
+                    <li>Interior wet Cleaning</li>
+                    <li>Window wiping Cleaning</li>
+                </ul>
+                <button>Book Now</button>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- washing plans end -->
+
+    <!-- washing location start -->
+    <section class="washing_points flex_3">
+        <div class="washing_centres">
+            <h3>Washing Points</h3>
+            <h2>Car Washing & Care Points</h2>
+            <div class="centres">
+                <div class="centre centre_1 flex_2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><b>Car Wahing Point</b> <br> 123 Street, New York, USA <br><strong> Call:- </strong>+012 31452478</p>
+                </div>
+                <div class="centre centre_2 flex_2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><b>Car Wahing Point</b> <br> 123 Street, New York, USA <br><strong> Call:- </strong>+012 31452478</p>
+                </div>
+                <div class="centre centre_3 flex_2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><b>Car Wahing Point</b> <br> 123 Street, New York, USA <br><strong> Call:- </strong>+012 31452478</p>
+                </div>
+                <div class="centre centre_4 flex_2">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p><b>Car Wahing Point</b> <br> 123 Street, New York, USA <br><strong> Call:- </strong>+012 31452478</p>
+                </div>
+            </div>
+        </div>
+        <div class="washing_form ">
+            <h2>Request for a car wash</h2>
+            <div class="request_form flex_2">
+                <input type="text" name="Name" id="customer_name" placeholder="Name">
+                <input type="text" name="Email" id="customer_name" placeholder="Email">
+                <textarea name="Message" id="description" placeholder="Description" rows="6"></textarea>
+                <button id="request_btn">Send Request</button>
+            </div>
+        </div>
+    </section>
+    <!-- washing location end -->
+
+    <!-- cards start -->
+    <section class="team">
+        <h3>MEET OUR TEAM</h3>
+        <h1>Our Engineers and Workers</h1>
+        <div class="team_cards">
+            <div class="card card_1">
+                <div class="card_img">
+                    <img src="img/team-1.jpg" class="img_std">
+                </div>
+                <div class="card_info">
+                    <h1>Donald John</h1>
+                    <p>Engineer</p>
+                </div>
+                <ul class="flex_3">
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="card card_2">
+                <div class="card_img">
+                    <img src="img/team-2.jpg" class="img_std">
+                </div>
+                <div class="card_info">
+                    <h1>Adam Phillips</h1>
+                    <p>Engineer</p>
+                </div>
+                <ul class="flex_3">
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="card card_3">
+                <div class="card_img">
+                    <img src="img/team-3.jpg" class="img_std">
+                </div>
+                <div class="card_info">
+                    <h1>Thomas Olsan</h1>
+                    <p>Worker</p>
+                </div>
+                <ul class="flex_3">
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="card card_4">
+                <div class="card_img">
+                    <img src="img/team-4.jpg" class="img_std">
+                </div>
+                <div class="card_info">
+                    <h1>James Alian</h1>
+                    <p>Worker</p>
+                </div>
+                <ul class="flex_3">
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- cards end -->
+
+    <!-- testimonials start -->
+    <section class="testimonials">
+        <h3>TESTIMONIALS</h3>
+        <h1>What Our Clients Say</h1>
+        <div class="testimonial_reviews">
+            <div class="reviews review_1 flex_2">
+                <div class="person_img">
+                    <img src="img/testimonial-1.jpg">
+                </div>
+                <div class="person_review">
+                    <h3>Client Name</h3>
+                    <h4>Profession</h4>
+                    <p><small>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum earum quidem animi!"</small></p>
+                </div>
+            </div>
+            <div class="reviews review_2 flex_2">
+                <div class="person_img">
+                    <img src="img/testimonial-2.jpg">
+                </div>
+                <div class="person_review">
+                    <h3>Client Name</h3>
+                    <h4>Profession</h4>
+                    <p><small>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum earum quidem animi!"</small></p>
+                </div>
+            </div>
+            <div class="reviews review_3 flex_2">
+                <div class="person_img">
+                    <img src="img/testimonial-3.jpg">
+                </div>
+                <div class="person_review">
+                    <h3>Client Name</h3>
+                    <h4>Profession</h4>
+                    <p><small>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum earum quidem animi!"</small></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonials end -->
+
+    <!-- news & article start -->
+    <section class="news_articles">
+        <h3>OUR BLOG</h3>
+        <h1>Latest New & Articles</h1>
+        <div class="articles_content flex_2">
+            <div class="article article_1">
+                <div class="article_img">
+                    <img src="img/blog-1.jpg" class="img_std">
+                </div>
+                <div class="article_content">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam voluptas inventore asperiores, qui cum quidem eum natus minus consectetur totam maxime porro optio incidunt minima, repellat amet debitis nihil.</small></p>
+                    <pre><i class="fas fa-user"></i> Admin|<i class="fas fa-folder"></i> Web Design|<i class="fas fa-comments"></i> 15 Comments</pre>
+                </div>
+            </div>
+            <div class="article article_2">
+                <div class="article_img">
+                    <img src="img/blog-2.jpg" class="img_std">
+                </div>
+                <div class="article_content">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam voluptas inventore asperiores, qui cum quidem eum natus minus consectetur totam maxime porro optio incidunt minima, repellat amet debitis nihil.</small></p>
+                    <pre><i class="fas fa-user"></i> Admin|<i class="fas fa-folder"></i> Web Design|<i class="fas fa-comments"></i> 15 Comments</pre>
+                </div>
+            </div>
+            <div class="article article_3">
+                <div class="article_img">
+                    <img src="img/blog-3.jpg" class="img_std">
+                </div>
+                <div class="article_content">
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quibusdam voluptas inventore asperiores, qui cum quidem eum natus minus consectetur totam maxime porro optio incidunt minima, repellat amet debitis nihil.</small></p>
+                    <pre><i class="fas fa-user"></i> Admin|<i class="fas fa-folder"></i> Web Design|<i class="fas fa-comments"></i> 15 Comments</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- news & article end -->
+
+    <footer class="flex_3">
+        <div class="footer_content">
+            <div class="get_in_touch">
+                <h2>Get In Touch</h2>
+                <p><i class="fas fa-map-marker-alt"></i>123 Street, New York, USA</p>
+                <p><i class="fas fa-phone-alt"></i>+012 12378964</p>
+                <p><i class="far fa-envelope"></i>info@example.com</p>
+                <ul class="flex_3">
+                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+            </div>
+            <div class="popular_links">
+                <h2>Popular Links</h2>
+                <ul>
+                    <li><a href=""><i class="fas fa-angle-right"></i>About Us</a></li>
+                    <li><a href=""><i class="fas fa-angle-right"></i>Contact Us</a></li>
+                    <li><a href=""><i class="fas fa-angle-right"></i>Our Services</a></li>
+                    <li><a href=""><i class="fas fa-angle-right"></i>Service Points</a></li>
+                    <li><a href=""><i class="fas fa-angle-right"></i>Pricing Plan</a></li>
+                </ul>
+            </div>
+            <div class="useful_links">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href=""><i class="fas fa-angle-right"></i>Trems Of Use</a></li>
+                    <li><a href=""><i class="fas fa-angle-right"></i>Privacy Policy</a></li>
+                    <li><a href=""><i class="fas fa-angle-right"></i>Cookies</a></li>
+                    <li><a href=""><i class="fas fa-angle-right"></i>Help</a></li>
+                    <li><a href=""><i class="fas fa-angle-right"></i>FAQ's</a></li>
+                </ul>
+            </div>
+            <div class="newsletter">
+                <h2>Newletter</h2>
+                <div class="newsletter_form flex_2">
+                    <input type="text" name="Fullname" id="Uname" placeholder="Name">
+                    <input type="text" name="Email" id="UEmail" placeholder="Email">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+        <p>&copy;<span>Your Site Name</span>,&nbsp;&nbsp;All rights reserved. Designed by <span>HTML Codex</span></p>
+    </footer>
+
+    <a href="#top" id="Top_btn">&uarr;</a>
+    <!-- javscript -->
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
+
